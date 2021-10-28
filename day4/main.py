@@ -27,28 +27,16 @@ scissor = """
 ---.__(___)
 """
 
+symbol = [rock,paper,scissor]
+
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-if choice == 0:
-    print(rock)
-elif choice == 1:
-    print(paper)
-elif choice == 2:
-    print(scissor)
-else:
-    print("Invalid Choice")
+print(symbol[choice])
 
 print("Computer chose:")
 computer = random.randint(0,2)
 
-if computer == 0:
-    print(rock)
-elif computer == 1:
-    print(paper)
-elif computer == 2:
-    print(scissor)
-else:
-    print("Invalid Choice")
+print(symbol[computer])
 
 win_message = "You win!"
 if choice == 0 and computer == 2:
